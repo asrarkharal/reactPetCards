@@ -1,0 +1,56 @@
+.adopt-form {
+    background-color: #d1abd1;
+    position: fixed;
+    width: 90%;
+    border: 3px solid #702acb;
+    padding: 10px;
+    border-radius: 10px; 
+   
+    z-index: 2; 
+    
+    
+}
+.adopt-form >div {
+    /* border: 2px solid blue; */
+    margin: 5px;
+}
+.adopt-form label {
+    margin: 10px;
+}
+
+.form-pet-info { grid-area: pet; }
+.adopt-form h3 { grid-area: hi; }
+.form-owner-info { grid-area: owner; 
+    display: flex;
+flex-direction: column;
+}
+.adopt-form-buttons { grid-area: btns; }
+
+.adopt-form {
+    display: grid;
+    grid-template-areas: 
+    'pet hi hi hi'
+    'pet owner owner owner'
+    'btns owner owner owner';
+}
+
+.petpic {
+    
+}
+.petpic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.adopt-form .formInput {
+     border-style: none;
+     border-radius: 3px;
+     background-color: #f8e9f8;
+     
+}
+.adopt-form input {
+    height: 25px;
+    
+}
